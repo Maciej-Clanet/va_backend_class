@@ -12,8 +12,8 @@ async def test():
     # return addUser("test", "test@gmail.com", "1234")
     # addProduct(1, "testcat", "title", "description", 3.50, "image url")
     # return getProductsByUser(1)
-    # temp = ["tag1", "tag2"]
-    # addArtwork(1, "test category", "test title", "test desc", "image", temp)
-    # return getArtworks()
+    temp = ["tag1", "tag2"]
+    addArtwork(generateUuid(), "test category", "test title", "test desc", "image", temp)
+    return getArtworks()
     # return getArtworksByUser(1)
-    return getLatestArtworks(2)
+    # return getLatestArtworks(2)
