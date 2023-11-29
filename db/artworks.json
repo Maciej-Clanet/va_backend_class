@@ -1,0 +1,20 @@
+{
+    "artworks": [
+        {
+          "user_id": 1,
+          "category": "Paintings",
+          "title": "Beautiful Landscape",
+          "description": "A stunning landscape painting.",
+          "image_url": "image_url_here",
+          "tags": ["landscape", "art"]
+        },
+        {
+          "user_id": 2,
+          "category": "Sculptures",
+          "title": "Abstract Sculpture",
+          "description": "An abstract sculpture made from marble.",
+          "image_url": "image_url_here",
+          "tags": ["abstract", "sculpture"]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "products": [
+        {
+          "user_id": 1,
+          "category": "supplies",
+          "title": "horse fur brush",
+          "description": "a brush bruh",
+          "price": 8.50,
+          "image_url": "image_url_here"
+        },
+        {
+          "user_id": 2,
+          "category": "Clothing",
+          "title": "Designer Dress",
+          "description": "A stylish designer dress.",
+          "price": 149.99,
+          "image_url": "image_url_here"
+        }
+      ]
+}
