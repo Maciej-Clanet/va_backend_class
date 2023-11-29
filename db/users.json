@@ -17,6 +17,12 @@
             "email": "test3@gmail.com",
             "username": "test3",
             "password": "1234"
+        },
+        {
+            "id": "8e016a7ede264fa3bdcac7cccae22720",
+            "email": "goober@gmail.com",
+            "username": "goober",
+            "password": "1234"
         }
     ]
 }

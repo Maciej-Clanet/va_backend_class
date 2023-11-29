@@ -1,7 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from db.dbutils import *
+from db.dbutils import generateUuid
+from db.userUtils import getUsers, saveUsers
 
 router = APIRouter()
 
@@ -12,6 +13,9 @@ class AuthCredentials(BaseModel):
 class LoginResponse(BaseModel):
     id: str
     username: str
+
+class UserId(BaseModel):
+    id : str
 
 @router.post("/register", response_model=LoginResponse)
 async def register(credentials: AuthCredentials):
@@ -51,3 +55,11 @@ async def login(credentials: AuthCredentials):
 
     #user not found
     raise HTTPException(400, detail="user not found")
+
+
+
+@router.post("/profile")
+async def getProfile(id: UserId):
+    pass
+
+
