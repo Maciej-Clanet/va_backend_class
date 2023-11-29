@@ -1,20 +1,52 @@
 {
     "artworks": [
         {
-          "user_id": 1,
-          "category": "Paintings",
-          "title": "Beautiful Landscape",
-          "description": "A stunning landscape painting.",
-          "image_url": "image_url_here",
-          "tags": ["landscape", "art"]
+            "user_id": 1,
+            "category": "test category",
+            "title": "test title",
+            "description": "test desc",
+            "image_url": "image",
+            "tags": [
+                "tag1",
+                "tag2"
+            ],
+            "created_at": "2023-11-29T10:40:39.481624"
         },
         {
-          "user_id": 2,
-          "category": "Sculptures",
-          "title": "Abstract Sculpture",
-          "description": "An abstract sculpture made from marble.",
-          "image_url": "image_url_here",
-          "tags": ["abstract", "sculpture"]
+            "user_id": 1,
+            "category": "test category",
+            "title": "test title",
+            "description": "test desc",
+            "image_url": "image",
+            "tags": [
+                "tag1",
+                "tag2"
+            ],
+            "created_at": "2023-11-29T10:41:50.267042"
+        },
+        {
+            "user_id": 1,
+            "category": "test category",
+            "title": "test title",
+            "description": "test desc",
+            "image_url": "image",
+            "tags": [
+                "tag1",
+                "tag2"
+            ],
+            "created_at": "2023-11-29T10:41:50.985646"
+        },
+        {
+            "user_id": 1,
+            "category": "test category",
+            "title": "test title",
+            "description": "test desc",
+            "image_url": "image",
+            "tags": [
+                "tag1",
+                "tag2"
+            ],
+            "created_at": "2023-11-29T10:41:51.932680"
         }
     ]
 }

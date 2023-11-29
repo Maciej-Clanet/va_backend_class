@@ -1,16 +1,28 @@
 {
-    "users" : [
+    "users": [
         {
             "id": 1,
             "username": "user1",
             "email": "user1@example.com",
             "password": "1234"
-          },
-          {
+        },
+        {
             "id": 2,
             "username": "user2",
             "email": "user2@example.com",
+            "password": "hashed_password_here"
+        },
+        {
+            "id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
+            "email": "test@gmail.com",
             "password": "1234"
-          }
+        },
+        {
+            "id": "eccda2ced86e4c1184ec12589024fbd5",
+            "username": "test",
+            "email": "test@gmail.com",
+            "password": "1234"
+        }
     ]
 }
