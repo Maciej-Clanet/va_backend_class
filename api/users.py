@@ -1,19 +1,53 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from db.dbutils import *
 
 router = APIRouter()
 
-@router.get("/test")
-async def test():
-    # return getUserById("06a990750bfe40069041d66322da8511")
-    # return getUsers()
-    # return addUser("test", "test@gmail.com", "1234")
-    # addProduct(1, "testcat", "title", "description", 3.50, "image url")
-    # return getProductsByUser(1)
-    temp = ["tag1", "tag2"]
-    addArtwork(generateUuid(), "test category", "test title", "test desc", "image", temp)
-    return getArtworks()
-    # return getArtworksByUser(1)
-    # return getLatestArtworks(2)
+class AuthCredentials(BaseModel):
+    email: str
+    password: str
+
+class LoginResponse(BaseModel):
+    id: str
+    username: str
+
+@router.post("/register", response_model=LoginResponse)
+async def register(credentials: AuthCredentials):
+    print(credentials)
+    #make sure email wasn't used before
+    users = getUsers()
+    for user in users["users"]:
+        if(user["email"] == credentials.email):
+            raise HTTPException(400, detail="account already exists")
+    
+    #doesn't exist, create one
+    username = credentials.email.split("@")[0]
+    new_user = {
+        "id": generateUuid(),
+        "email" : credentials.email,
+        "username": username,
+        "password": credentials.password
+    }
+    users["users"].append(new_user)
+    saveUsers(users)
+
+    return {"id": new_user["id"], "username" : new_user["username"]}
+
+
+@router.post("/login", response_model=LoginResponse)
+async def login(credentials: AuthCredentials):
+    users = getUsers()["users"]
+    for user in users:
+        if(user["email"] == credentials.email):
+            #user exist check password
+            if(user["password"] == credentials.password):
+                #correct
+                return {"id": user["id"], "username" : user["username"]}
+            else:
+                #wrong password
+                raise HTTPException(400, detail="incorrect password")
+
+    #user not found
+    raise HTTPException(400, detail="user not found")

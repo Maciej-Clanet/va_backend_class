@@ -1,7 +1,8 @@
 {
     "artworks": [
         {
-            "user_id": "57db8dda76d042efad5d9adbd7464335",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -10,10 +11,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:26:57.400695"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:08:03.918194"
         },
         {
-            "user_id": "b6231c1b33ca485ba021a956cb9283cd",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -22,10 +25,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:26:59.638177"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/another%20one.png",
+            "created_at": "2023-11-29T21:08:11.733619"
         },
         {
-            "user_id": "41d85610ae0b4652b9a0d38d88378cb4",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -34,10 +39,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:00.069902"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/third.png",
+            "created_at": "2023-11-29T21:16:16.049277"
         },
         {
-            "user_id": "48da9f894d28493f8e00f192bd27b1ea",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -46,10 +53,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:00.567448"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:16:16.260303"
         },
         {
-            "user_id": "38ba3372973b44a68d63f878de31ace7",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -58,10 +67,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:00.807076"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:16:16.469312"
         },
         {
-            "user_id": "0f10e89161c24d1daa94a30388bef043",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -70,10 +81,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:00.976810"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:16:16.653315"
         },
         {
-            "user_id": "86594e55501749c8a72ba0797f2b9ee4",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -82,10 +95,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:01.143832"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:16:16.835881"
         },
         {
-            "user_id": "ad576f88d7b44ea9a1e4da22856f0b5a",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -94,10 +109,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:01.303761"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:16:17.032390"
         },
         {
-            "user_id": "234bbc244ec146d99c7d7d773b9b0f78",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -106,10 +123,12 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:01.465708"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:16:17.256899"
         },
         {
-            "user_id": "4f64f71c1d4c4765a32f6b16536b4ec0",
+            "user_id": "06a990750bfe40069041d66322da8511",
+            "username": "test",
             "category": "test category",
             "title": "test title",
             "description": "test desc",
@@ -118,223 +137,8 @@
                 "tag1",
                 "tag2"
             ],
-            "created_at": "2023-11-29T16:27:01.628837"
-        },
-        {
-            "user_id": "5d80a76fcd37444abb2b63568ccc7124",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:01.795360"
-        },
-        {
-            "user_id": "9f7453df7277485983656fead96c8f86",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:01.972625"
-        },
-        {
-            "user_id": "cb022c83247c4a0fa75e8ed58ffdda1b",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:02.140057"
-        },
-        {
-            "user_id": "370b665496834e298f9abed9dbbbbd31",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:02.315564"
-        },
-        {
-            "user_id": "2ebadd7981a2425793ce33ef18c118f3",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:02.531371"
-        },
-        {
-            "user_id": "5de1ef7cd56447fea0eb0f8ba7c08183",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:03.262228"
-        },
-        {
-            "user_id": "015e63a1c9054fcdbcd3266db5b756e4",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:03.612738"
-        },
-        {
-            "user_id": "c83c02c9482d4e7cbd91607b99f5bea9",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:03.999115"
-        },
-        {
-            "user_id": "ec83c4399a174fd9a86db7e15c5cc568",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:04.350396"
-        },
-        {
-            "user_id": "e285dddf3c7f4f899f68b8b82b401a17",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:04.726215"
-        },
-        {
-            "user_id": "1e8bcff71c66402380799e95680fa5b8",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:05.150725"
-        },
-        {
-            "user_id": "b0b048cec20c40e3b56125e162abe2c9",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:05.559575"
-        },
-        {
-            "user_id": "1570e2e897914d578c3ef823d1fa707a",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:05.978775"
-        },
-        {
-            "user_id": "94d62950cb6046c8943cf003036a925b",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:06.369935"
-        },
-        {
-            "user_id": "dd078e02f55b45bf8560df462b7996d4",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:06.838104"
-        },
-        {
-            "user_id": "a89cfc42c35e41bb89ac37d68035ebd9",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:07.274258"
-        },
-        {
-            "user_id": "922e641fb6614a69ad0898127c2d1780",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:07.611010"
-        },
-        {
-            "user_id": "4a33735eeb354e45bb9f6605fcbf1d1b",
-            "category": "test category",
-            "title": "test title",
-            "description": "test desc",
-            "image_url": "image",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "created_at": "2023-11-29T16:27:08.028276"
+            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "created_at": "2023-11-29T21:16:26.267003"
         }
     ]
 }

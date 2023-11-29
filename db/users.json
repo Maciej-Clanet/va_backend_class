@@ -1,27 +1,21 @@
 {
     "users": [
         {
-            "id": 1,
-            "username": "user1",
-            "email": "user1@example.com",
-            "password": "1234"
-        },
-        {
-            "id": 2,
-            "username": "user2",
-            "email": "user2@example.com",
-            "password": "hashed_password_here"
-        },
-        {
             "id": "06a990750bfe40069041d66322da8511",
             "username": "test",
             "email": "test@gmail.com",
             "password": "1234"
         },
         {
-            "id": "eccda2ced86e4c1184ec12589024fbd5",
-            "username": "test",
-            "email": "test@gmail.com",
+            "id": "08cbf7705c9a448684f58c1bb7812701",
+            "email": "test2@gmail.com",
+            "username": "test2",
+            "password": "1234"
+        },
+        {
+            "id": "9a7b12502836434fa28a60a9330bfead",
+            "email": "test3@gmail.com",
+            "username": "test3",
             "password": "1234"
         }
     ]
