@@ -1,8 +1,11 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+from typing import List
+
 
 from db.dbutils import generateUuid
 from db.userUtils import getUsers, saveUsers
+from db.profilesUtils import createProfile, getProfileById, saveProfileChange
 
 router = APIRouter()
 
@@ -37,6 +40,9 @@ async def register(credentials: AuthCredentials):
     users["users"].append(new_user)
     saveUsers(users)
 
+    #create profile for the user
+    createProfile(new_user["id"])
+
     return {"id": new_user["id"], "username" : new_user["username"]}
 
 
@@ -58,8 +64,39 @@ async def login(credentials: AuthCredentials):
 
 
 
-@router.post("/profile")
-async def getProfile(id: UserId):
-    pass
+class ProfileData(BaseModel):
+    user_id: str
+    bio: str
+    art_categories: List[str]
+    product_categories: List[str]
+
+@router.post("/profile", response_model=ProfileData)
+async def getProfile(profileRequest: UserId):
+    profile = getProfileById(profileRequest.id)
+    if(not profile):
+       raise HTTPException(400, detail="Could not get profile data")
+    
+    return profile
 
 
+class UpdateProfile(BaseModel):
+    user_id: str
+    bio: str = None
+    art_categories: List[str] = None
+    product_categories: List[str] = None 
+
+@router.post("/updateprofile")
+async def updateProfile(newData: UpdateProfile):
+    
+    oldProfile = getProfileById(newData.user_id)
+    
+    if newData.bio is not None:
+        oldProfile["bio"] = newData.bio
+    if newData.art_categories is not None:
+        oldProfile["art_categories"] = newData.art_categories
+    if newData.product_categories is not None:
+        oldProfile["product_categories"] = newData.product_categories
+
+    saveProfileChange(newData.user_id, oldProfile)
+
+    

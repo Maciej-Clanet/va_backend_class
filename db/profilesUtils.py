@@ -12,6 +12,28 @@ def createProfile(id):
 
     profileInfo = {
         "user_id": id,
-        "bio" : None,
-        "categories" : []
+        "bio" : "",
+        "art_categories" : ["all"],
+        "product_categories" : ["all"]
     }
+
+    profiles = getProfiles()
+    profiles["profiles"].append(profileInfo)
+    saveProfiles(profiles)
+
+def getProfileById(id):
+    profiles = getProfiles()["profiles"]
+    for profile in profiles:
+        if(profile["user_id"] == id):
+            return profile
+        
+def saveProfileChange(id, newData):
+    profiles = getProfiles()
+
+    for profile in profiles["profiles"]:
+        if(profile["user_id"] == id):
+            profile.update(newData)
+            print(profile)
+            break
+    print(profiles)
+    saveProfiles(profiles)

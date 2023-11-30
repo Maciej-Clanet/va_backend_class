@@ -1,12 +1,14 @@
 {
-    "profiles" : [
+    "profiles": [
         {
-            "user_id" : 1,
-            "bio" : "this is the bio for user 1"
-        },
-        {
-            "user_id": 2,
-            "bio": "This is the bio for user2."
+            "user_id": "ce3cddd63b404aa2877de1f2351b7d4a",
+            "bio": "fasfsa",
+            "art_categories": [
+                "all"
+            ],
+            "product_categories": [
+                "all"
+            ]
         }
     ]
 }

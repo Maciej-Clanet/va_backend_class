@@ -1,27 +1,9 @@
 {
     "users": [
         {
-            "id": "06a990750bfe40069041d66322da8511",
-            "username": "test",
+            "id": "ce3cddd63b404aa2877de1f2351b7d4a",
             "email": "test@gmail.com",
-            "password": "1234"
-        },
-        {
-            "id": "08cbf7705c9a448684f58c1bb7812701",
-            "email": "test2@gmail.com",
-            "username": "test2",
-            "password": "1234"
-        },
-        {
-            "id": "9a7b12502836434fa28a60a9330bfead",
-            "email": "test3@gmail.com",
-            "username": "test3",
-            "password": "1234"
-        },
-        {
-            "id": "8e016a7ede264fa3bdcac7cccae22720",
-            "email": "goober@gmail.com",
-            "username": "goober",
+            "username": "test",
             "password": "1234"
         }
     ]
