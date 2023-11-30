@@ -4,6 +4,7 @@ from typing import List
 
 
 from db.dbutils import generateUuid
+from db.userUtils import getUsers
 # from db.userUtils import getUsers, saveUsers
 # from db.profilesUtils import createProfile, getProfileById, saveProfileChange
 
@@ -29,6 +30,14 @@ class LoginResponse(BaseModel):
 #register
 @router.post("/register", response_model=LoginResponse)
 async def register(credentials: AuthCredentials):
+    usersJSON = getUsers()
+
+    #check if user exists
+    for user in usersJSON["users"]:
+        if(credentials["email"] == user["email"])
+            raise HTTPException(400, )
+
+
     
 
 #profile
