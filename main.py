@@ -5,7 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from api import users, art
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="data"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 orgins = [
     "http://localhost",

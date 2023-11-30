@@ -11,7 +11,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:08:03.918194"
         },
         {
@@ -25,7 +25,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/another%20one.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/another%20one.png",
             "created_at": "2023-11-29T21:08:11.733619"
         },
         {
@@ -39,7 +39,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/third.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/third.png",
             "created_at": "2023-11-29T21:16:16.049277"
         },
         {
@@ -53,7 +53,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:16:16.260303"
         },
         {
@@ -67,7 +67,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:16:16.469312"
         },
         {
@@ -81,7 +81,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:16:16.653315"
         },
         {
@@ -95,7 +95,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:16:16.835881"
         },
         {
@@ -109,7 +109,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:16:17.032390"
         },
         {
@@ -123,7 +123,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:16:17.256899"
         },
         {
@@ -137,7 +137,7 @@
                 "tag1",
                 "tag2"
             ],
-            "thumbnail_path": "http://localhost:8000/static/user_art/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
+            "thumbnail_path": "http://localhost:8000/static/users/06a990750bfe40069041d66322da8511/thumbnails/test%20title.png",
             "created_at": "2023-11-29T21:16:26.267003"
         }
     ]
