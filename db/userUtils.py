@@ -12,4 +12,7 @@ def getUsers():
 #addUser
 
 #saveUsers
+def saveUsers(newUsers):
+    with open("db/users.json", "w+") as file:
+        file.write( json.dumps(newUsers, indent=4) )
 
