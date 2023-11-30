@@ -6,7 +6,3 @@ def generateUuid():
     return uuid.uuid4().hex
 
 
-
-
-
-
