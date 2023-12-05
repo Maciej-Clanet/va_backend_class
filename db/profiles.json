@@ -5,7 +5,8 @@
             "bio": "",
             "profession" : "",
             "art_categories": [
-                "all"
+                "all",
+                "portraits"
             ],
             "product_categories": [
                 "all"

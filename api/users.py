@@ -5,7 +5,7 @@ from typing import List
 
 from db.dbutils import generateUuid
 from db.userUtils import getUsers, saveUsers
-# from db.profilesUtils import createProfile, getProfileById, saveProfileChange
+from db.profilesUtils import getProfileById
 
 router = APIRouter()
 
@@ -59,15 +59,42 @@ async def register(credentials: AuthCredentials):
     return {"id" : new_user["id"], "username" : new_user["username"]}
     
 
-#userIdObject
-##this object will only be an id
+class UserIdObject(BaseModel):
+    user_id: str
 
-#ProfileDataObject
-##this object will define how a profile data will be structured
+class ProfileData(BaseModel):
+    bio: str
+    profession: str
+    art_categories: List[str]
+    product_categories: List[str]
 
 #Profile
 ##this endpoint will accept an id of the user, and return it's profile information
 ## if not profile has been fount, raise a HTTPException
+
+@router.post("/profile", response_model=ProfileData)
+async def profile(id:UserIdObject):
+    profile = getProfileById(id)
+    return profile
+
+#decide on what path the endpoint lives on
+#decide if its a get or a post
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #UpdateProfile details object
