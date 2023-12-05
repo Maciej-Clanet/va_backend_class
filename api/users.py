@@ -74,7 +74,11 @@ class ProfileData(BaseModel):
 
 @router.post("/profile", response_model=ProfileData)
 async def profile(id:UserIdObject):
-    profile = getProfileById(id)
+    profile = getProfileById(id.user_id)
+
+    if not profile:
+        HTTPException(400, detail="no profile found")
+
     return profile
 
 #decide on what path the endpoint lives on
