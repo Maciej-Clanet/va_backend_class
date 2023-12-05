@@ -77,7 +77,7 @@ async def profile(id:UserIdObject):
     profile = getProfileById(id.user_id)
 
     if not profile:
-        HTTPException(400, detail="no profile found")
+        raise HTTPException(400, detail="no profile found")
 
     return profile
 
