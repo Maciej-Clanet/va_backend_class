@@ -19,9 +19,6 @@ class LoginResponse(BaseModel):
     id: str
     username: str
 
-#userIdObject
-#ProfileDataObject
-#UpdateProfile details object
 
 #login
 @router.post("/login", response_model=LoginResponse)
@@ -61,8 +58,24 @@ async def register(credentials: AuthCredentials):
 
     return {"id" : new_user["id"], "username" : new_user["username"]}
     
-#profile
+
+#userIdObject
+##this object will only be an id
+
+#ProfileDataObject
+##this object will define how a profile data will be structured
+
+#Profile
+##this endpoint will accept an id of the user, and return it's profile information
+## if not profile has been fount, raise a HTTPException
+
+
+#UpdateProfile details object
+## define the data, make every profile attribute optional except the id
 
 #update profile
-
+## the endpoint will acept UpdateProfile data
+## get current profile state based on the id
+## for every property that has been given by the frontend, overwrite the old profile value with the new
+## save the profile change
     
