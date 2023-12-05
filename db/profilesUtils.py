@@ -13,6 +13,7 @@ def createProfile(id):
     profileInfo = {
         "user_id": id,
         "bio" : "",
+        "profession": "",
         "art_categories" : ["all"],
         "product_categories" : ["all"]
     }

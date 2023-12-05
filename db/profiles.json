@@ -2,7 +2,19 @@
     "profiles": [
         {
             "user_id": "ce3cddd63b404aa2877de1f2351b7d4a",
-            "bio": "fasfsa",
+            "bio": "goober prime",
+            "profession": "",
+            "art_categories": [
+                "all"
+            ],
+            "product_categories": [
+                "all"
+            ]
+        },
+        {
+            "user_id": "0d7c1d87e6e44d4b9686c3e9eeb5fad5",
+            "bio": "General Goober",
+            "profession": "",
             "art_categories": [
                 "all"
             ],
