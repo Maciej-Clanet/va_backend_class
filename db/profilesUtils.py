@@ -27,9 +27,9 @@ def updateProfile(newProfile):
     for profile in profiles["profiles"]:
         if newProfile["user_id"] == profile["user_id"]:
             print("found profile")
+            profile.update(newProfile)
+            saveProfiles(profiles)
+            return
             
-
-    #overwrite it with the newProfile
-
-    #save all profiles
-
+    print("could not find profile")
+   

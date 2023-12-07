@@ -2,8 +2,8 @@
     "profiles": [
         {
             "user_id": "ce3cddd63b404aa2877de1f2351b7d4a",
-            "bio": "",
-            "profession" : "",
+            "bio": "new bio",
+            "profession": "",
             "art_categories": [
                 "all",
                 "portraits"
