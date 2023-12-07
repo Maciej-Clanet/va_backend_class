@@ -17,6 +17,12 @@
             "email": "tes3t@gmailhjhjghj.com",
             "password": "string",
             "username": "tes3t"
+        },
+        {
+            "id": "c5091ff11aef4471880e36ebf84ac459",
+            "email": "joemama@gmail.com",
+            "password": "1234",
+            "username": "joemama"
         }
     ]
 }

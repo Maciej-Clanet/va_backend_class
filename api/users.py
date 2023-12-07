@@ -19,6 +19,8 @@ class LoginResponse(BaseModel):
     id: str
     username: str
 
+
+
 #login
 @router.post("/login", response_model=LoginResponse)
 async def login(credentials: AuthCredentials):
@@ -58,9 +60,7 @@ async def register(credentials: AuthCredentials):
     return {"id" : new_user["id"], "username" : new_user["username"]}
     
 
-
-#userIdObject
-class UserId(BaseModel):
+class UserIdObject(BaseModel):
     user_id: str
 
 class ProfileData(BaseModel):
@@ -69,17 +69,41 @@ class ProfileData(BaseModel):
     art_categories: List[str]
     product_categories: List[str]
 
-
-#profile
 @router.post("/profile", response_model=ProfileData)
-async def profile(id: UserId):
+async def profile(id:UserIdObject):
     profile = getProfileById(id.user_id)
-    if profile == None:
-        raise HTTPException(400, detail="Profile not found")
+
+    if not profile:
+        raise HTTPException(400, detail="no profile found")
+
     return profile
 
-#update profile
+#decide on what path the endpoint lives on
+#decide if its a get or a post
 
-
-#ProfileDataObject
 #UpdateProfile details object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#UpdateProfile details object
+## define the data, make every profile attribute optional except the id
+
+#update profile
+## the endpoint will acept UpdateProfile data
+## get current profile state based on the id
+## for every property that has been given by the frontend, overwrite the old profile value with the new
+## save the profile change
+    
