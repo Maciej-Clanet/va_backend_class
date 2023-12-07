@@ -78,10 +78,30 @@ async def profile(id:UserIdObject):
 
     return profile
 
-#decide on what path the endpoint lives on
-#decide if its a get or a post
+
+class UpdateProfileObject(BaseModel):
+    user_id: str
+    profession: str = None
+    bio: str = None
+    art_categories : List[str] = None
+    product_categories : List[str] = None
 
 #UpdateProfile details object
+@router.post("/UpdatProfile")
+async def updateProfileEndpoint(newData: UpdateProfileObject):
+    currentProfile = getProfileById(newData.user_id)
+
+    if newData.bio is not None:
+        currentProfile["bio"] = newData.bio
+    if newData.profession is not None:
+        currentProfile["profession"] = newData.profession
+    if newData.art_categories is not None:
+        currentProfile["art_categories"] = newData.art_categories
+    if newData.product_categories is not None:
+        currentProfile["product_categories"] = newData.product_categories
+
+    print(currentProfile)
+
 
 
 

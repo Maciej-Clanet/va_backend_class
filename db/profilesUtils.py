@@ -19,10 +19,6 @@ def getProfileById(id):
             return profile
 
 
-#save profile
+#update profile
+# def updateProfile(id, newData):
 
-#create profile
-
-#get profile by id
-
-#save profiles
