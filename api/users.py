@@ -5,7 +5,7 @@ from typing import List
 
 from db.dbutils import generateUuid
 from db.userUtils import getUsers, saveUsers
-from db.profilesUtils import getProfileById
+from db.profilesUtils import getProfileById, updateProfile
 
 router = APIRouter()
 
@@ -100,7 +100,7 @@ async def updateProfileEndpoint(newData: UpdateProfileObject):
     if newData.product_categories is not None:
         currentProfile["product_categories"] = newData.product_categories
 
-    print(currentProfile)
+    updateProfile(currentProfile)
 
 
 
