@@ -87,7 +87,7 @@ class UpdateProfileObject(BaseModel):
     product_categories : List[str] = None
 
 #UpdateProfile details object
-@router.post("/UpdatProfile")
+@router.post("/UpdateProfile")
 async def updateProfileEndpoint(newData: UpdateProfileObject):
     currentProfile = getProfileById(newData.user_id)
 
