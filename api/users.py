@@ -5,7 +5,7 @@ from typing import List
 
 from db.dbutils import generateUuid
 from db.userUtils import getUsers, saveUsers
-# from db.profilesUtils import createProfile, getProfileById, saveProfileChange
+from db.profilesUtils import getProfileById
 
 router = APIRouter()
 
@@ -18,10 +18,6 @@ class AuthCredentials(BaseModel):
 class LoginResponse(BaseModel):
     id: str
     username: str
-
-#userIdObject
-#ProfileDataObject
-#UpdateProfile details object
 
 #login
 @router.post("/login", response_model=LoginResponse)
@@ -61,8 +57,29 @@ async def register(credentials: AuthCredentials):
 
     return {"id" : new_user["id"], "username" : new_user["username"]}
     
+
+
+#userIdObject
+class UserId(BaseModel):
+    user_id: str
+
+class ProfileData(BaseModel):
+    bio: str
+    profession: str
+    art_categories: List[str]
+    product_categories: List[str]
+
+
 #profile
+@router.post("/profile", response_model=ProfileData)
+async def profile(id: UserId):
+    profile = getProfileById(id.user_id)
+    if profile == None:
+        raise HTTPException(400, detail="Profile not found")
+    return profile
 
 #update profile
 
-    
+
+#ProfileDataObject
+#UpdateProfile details object
