@@ -12,7 +12,7 @@ def saveArtworks(new_artworks):
 
 def addArtwork(user_id, category, title, description, image_url, tags):
     artworks = getArtworks()
-    thumbPath = f"http://localhost:8000/static/user_art/{user_id}/thumbnails/{title}.png"
+    thumbPath = f"http://localhost:8000/static/users/{user_id}/thumbnails/{title}.png"
     thumbPath = thumbPath.replace(" ", "%20")
 
     artworks["artworks"].append({

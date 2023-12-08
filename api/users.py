@@ -67,6 +67,7 @@ async def login(credentials: AuthCredentials):
 class ProfileData(BaseModel):
     user_id: str
     bio: str
+    profession: str
     art_categories: List[str]
     product_categories: List[str]
 
@@ -82,6 +83,7 @@ async def getProfile(profileRequest: UserId):
 class UpdateProfile(BaseModel):
     user_id: str
     bio: str = None
+    profession: str = None
     art_categories: List[str] = None
     product_categories: List[str] = None 
 
@@ -92,6 +94,8 @@ async def updateProfile(newData: UpdateProfile):
     
     if newData.bio is not None:
         oldProfile["bio"] = newData.bio
+    if newData.profession is not None:
+        oldProfile["profession"] = newData.profession
     if newData.art_categories is not None:
         oldProfile["art_categories"] = newData.art_categories
     if newData.product_categories is not None:
